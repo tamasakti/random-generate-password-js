@@ -1,0 +1,214 @@
+body {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+    width: 550px;
+    height: 450px;
+    background-color: #1F2937;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header > h1 {
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+.header > p {
+    font-family: Poppins;
+    font-weight: 500;
+    margin-top: -20px;
+    color: white;
+}
+
+.heading {
+    color: white;
+}
+
+.subheading {
+    color: #4ADF86;
+    margin-top: -25px;
+}
+
+.generate-btn {
+    width: 197px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #10B981;
+    color: white;
+    font-family: Poppins;
+    border: none;
+}
+
+.generate-btn:hover {
+    background-color: #076143;
+    cursor: pointer;
+}
+
+.generate-password {
+    width: 200px;
+    height: 25px;
+    background-color: #273549;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+}
+
+.generate-password:hover {
+   cursor: pointer;
+}
+.output-password{
+    position:relative;
+    padding: 5px;
+    background-color:#273549;
+    display: flex;
+    width: 150px;
+    height: 50px;
+}
+
+.output-password > button {
+    color: white;
+    background-color:#10B981;
+    border: none;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.output-password > button:active {
+    background-color:#056444;
+}
+
+.output-password > button:hover {
+    cursor: pointer;
+}
+
+.output-password > button:before {
+    content: "Copied";
+    position: absolute;
+    top: -48px;
+    right: 3px;
+    background: #10B981;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: none;
+}
+
+.output-password > button:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #10B981;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.output-password.active button:before,
+.output-password.active button:after {
+    display: block;
+}
+
+.output-container {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 25px;
+}
+
+.input-section {
+    margin-top: 20px;
+    width: 200px;
+    border: none;
+    background-color: #1F2937;
+    color: white;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-top: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .slider-desc {
+    color:white;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-top: -25px;
+    margin-left: 60px;
+  }
+
+  .footer-p {
+    text-align: center;
+    color: white;
+    font-family: Poppinss;
+    font-weight: 500;
+    margin-top: 55px;
+  }
